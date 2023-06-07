@@ -8,20 +8,31 @@
 <body>
     <header>
         <div>
-            <h1 class="text-3xl text-black-500 font-bold text-center mb-5">
-                出典自動生成サイト
+            <h1 class="text-3xl text-black-500 font-bold text-center p-3">
+                出典元自動生成サイト
             </h1>
         </div> 
     </header>
-    
-    <div class="block bg-slate-200" >
+    <div class="flex sm:block ">
+    <div class="block bg-slate-200 w-3/4" >
         <p class="text-center">発信元＋（発信年号）＋「記事タイトル」＋配信年号、URL（最終閲覧年月日）</p>
-        <form class="text-center" action="" method="post">
-            <label >URLを入力</label><br>
-            <input type="text" name="first-name" value="" placeholder="URLを入力">
-            <input type="submit">
-          </form>
-
+        <form class="text-center p-3" action="" method="post">
+        <div class="sm:block flexed">
+            <label >URLを入力</label>
+            <input type="text" name="url" id="UrlText" placeholder="URLを入力">
+        </div>
+        <div class="sm:block flexed">
+            <label >タイトルを入力</label>
+            <input type="text" name="url" id="Title" placeholder="タイトルを入力">
+        </div>
+        <input type="button" value="生成" id="btn" class="text-area">
+        </form>  
     </div>
+    <div class="block text-center">
+        <p class="w-3/4 ">結果</p>
+        <p id="result" class="font-bold"></p>
+    </div>
+</div>
+    <script src="./script.js"></script>
 </body>
 </html>

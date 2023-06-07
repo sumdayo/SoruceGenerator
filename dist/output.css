@@ -10,9 +10,9 @@
 *,
 ::before,
 ::after {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   /* 1 */
-  border-width: 0;
+  /* border-width: none; */
   /* 2 */
   border-style: solid;
   /* 2 */
@@ -224,11 +224,14 @@ button,
 [type='reset'],
 [type='submit'] {
   -webkit-appearance: button;
-  /* 1 */
-  background-color: transparent;
-  /* 2 */
-  background-image: none;
-  /* 2 */
+
+  background-color: #fff;
+  border-radius: 10px;
+  width: auto;
+  border: solid 1.5px #000;
+  font-weight: bold;
+  
+
 }
 
 /*
